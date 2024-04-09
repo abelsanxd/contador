@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 const Informacion = (props) => {
   return (
     <>
@@ -18,7 +18,7 @@ const Informacion = (props) => {
 };
 
 Informacion.propTypes = {
-    comision: PropTypes.string.isRequired, // Validación para la prop 'comision'
-  };
+  comision: PropTypes.string.isRequired, // Validación para la prop 'comision'
+};
 
 export default Informacion;
