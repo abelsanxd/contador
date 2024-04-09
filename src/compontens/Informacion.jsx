@@ -1,4 +1,5 @@
-const Informacion = () => {
+import PropTypes from 'prop-types';
+const Informacion = (props) => {
   return (
     <>
       <h2>Conceptos de react</h2>
@@ -9,10 +10,15 @@ const Informacion = () => {
         representan diferentes partes de la interfaz de usuario. React utiliza
         un paradigma de programación declarativa, lo que significa que los
         desarrolladores describen cómo debería ser la interfaz de usuario y
-        React se encarga de manejar los cambios de manera eficiente.
+        React se encarga de manejar los cambios de manera eficiente. Comision:
+        {props.comision}
       </p>
     </>
   );
 };
+
+Informacion.propTypes = {
+    comision: PropTypes.string.isRequired, // Validación para la prop 'comision'
+  };
 
 export default Informacion;
